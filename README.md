@@ -1,0 +1,1 @@
+This is a playlist project created to incorporate two apps: Net Ninjas's JS and Dom and Gordan's Watch and Code. 
