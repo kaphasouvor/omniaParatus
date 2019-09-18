@@ -4,9 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
   <title>Omnia Paratus</title>
 </head>
 <body>
-  
+    <div id="wrapper">
+        <header>
+          <div id="page-banner">
+            <h1 class="title">Omnia Paratus</h1>
+            <p>“Music produces a kind of pleasure which human nature cannot do without.” ― Confucius</p>
+            <form id="search-songs">
+              <input type="text" placeholder="Browse for artist, bands, songs..." />
+            </form>
+          </div>
+        </header>
+        <div id="song-list">
+          <h2 class="title">Top Five Trending Songs</h2>
+          <ul>
+            <li>
+              <span class="name">Shawn Mendes & Camila Cabello - Senorita</span>
+              <span class="delete">delete</span>
+            </li>
+            <li>
+              <span class="name">Lizzo - Truth Hurts</span>
+              <span class="delete">delete</span>
+            </li>
+            <li>
+              <span class="name">Post Malone Featuring Young Thug - Goodbyes</span>
+              <span class="delete">delete</span>
+            </li>
+            <li>
+              <span class="name">Billie Eilish - Bad Guy</span>
+              <span class="delete">delete</span>
+            </li>
+          </ul>
+        </div>
+        <form id="add-song">
+          <input type="checkbox" id="hide" />
+          <label for="hide">Hide all songs</label>
+          <input type="text" placeholder="Add a song..." />
+          <button>Add</button>
+        </form>
+        <div id="tabbed-content">
+          <ul class="tabs">
+            <li data-target="#about" class="active">About</li>
+            <li data-target="#contact">Contact</li>
+          </ul>
+          <div class="panel active" id="about">
+            <p>Content for about tab...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+          </div>
+          <div class="panel" id="contact">
+            <p>Content for contact tab...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+          </div>
+        </div>
+      </div>
 </body>
+<script src="script.js"></script>
 </html>
